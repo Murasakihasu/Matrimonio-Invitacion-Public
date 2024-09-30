@@ -1,0 +1,293 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Kalnia+Glaze:wght@100..700&family=Love+Light&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Jacques+Francois+Shadow&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Jacques+Francois+Shadow&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund:wght@100..400&family=Sofadi+One&display=swap');
+
+:root{
+	--oscuro1: #491003;
+	--oscuro2: #800d06;
+	--mid1: #a62609;
+	--mid2: #d04d06;
+	--claro1: #f37715;
+	--negro: black;
+	--negro2: #1C1C1C;
+	--blanco: #fff;
+	--blanco2: #F5F5F5;
+	--blanco3: #bcb8b2;
+	--font:"Love Light", cursive;
+	--font2: "Gowun Batang", serif;
+	--font3: "Playfair Display", serif;
+	--font4: "Caveat", cursive;
+	--font5: "Jacques Francois Shadow", serif;
+	--font6: "Playwrite DE Grund", cursive;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: var(--blanco3);
+	width:100vh;
+}
+
+
+.barContainer{
+	position: relative;
+	width: 100%;
+	right: 0;
+}
+
+.navigation{
+	position: fixed;
+	width: 5rem;
+	height: 100vh;
+	background: rgb(208,77,6);
+	background: linear-gradient(180deg, rgba(208,77,6,1) 0%, rgba(73,16,3,1) 100%);
+	border-right: 10px solid linear-gradient(180deg, rgba(208,77,6,1) 0%, rgba(73,16,3,1) 100%);
+	transition: 0.5s;
+	overflow: hidden;
+	right: 0;
+}
+
+.navigation.active{
+	width: 19rem;
+}
+
+.navigation .navUl{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	padding-left: 0;
+}
+
+.navigation .navUl li{
+	position: relative;
+	width: 100%;
+	list-style: none;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--font3);
+}
+
+
+
+.navigation .navUl li:hover,
+.navigation .navUl li.hovered{
+	background: var(--oscuro1);
+}
+
+
+.navigation .navUl .first{
+	margin-top: 1rem;
+}
+
+.navigation .navUl li .seleccion{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--blanco2);	
+}
+
+.titleBox{
+	position:relative;
+	display:flex;
+}
+
+.navigation li:hover .seleccion,
+.navigation li.hovered .seleccion{
+	color: var(--blanco2);
+}
+
+.navigation li .seleccion .icon{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 40px;
+	line-height: 70px;
+	text-align: center;
+	margin-bottom: 7px;
+	margin-left: 10px;
+}
+
+.navigation li .seleccion .icon ion-icon{
+	font-size:2em;
+}
+
+.navigation li .seleccion .title{
+	position: relative;
+	display: block;
+	padding: 7px 10px;
+	line-height: 60px;
+	text-align: start;
+	white-space: nowrap;
+	font-size: 1.5rem;
+}
+
+.navigation li:hover .seleccion::before,
+.navigation li.hovered .seleccion::before{
+	content:'';
+	position: absolute;
+	right: 0;
+	top: -50px;
+	width: 50px;
+	height: 50px;
+	background:transparent;
+	border-radius: 50%;
+	box-shadow: 35px 35px 0 10px var(--white);
+	pointer-events: none;
+}
+
+.navigation li:hover .seleccion::after,
+.navigation li.hovered .seleccion::after{
+	content:'';
+	position: absolute;
+	right: 0;
+	bottom: -50px;
+	width: 50px;
+	height: 50px;
+	background:transparent;
+	border-radius: 50%;
+	box-shadow: 35px -35px 0 10px var(--white);
+	pointer-events: none;
+}
+
+.main{
+	position: absolute;
+	width: calc(100% - 5rem);
+	right: 5rem;
+	transition: 0.5s;
+}
+
+.main.active{
+	width: calc(100% - 19rem);
+	right: 19rem;
+}
+
+.toggle{
+	position: absolute;
+	margin: 10px;
+	right: 10px;
+	font-size: 2.5rem;
+	cursor: pointer;
+	color: var(--blanco2);
+}
+
+.toggle:hover{
+	font-size: 4rem;
+}
+
+h1{
+	text-align: center;
+	font-size: 6rem;
+	color: var(--blanco2);
+	margin: 40px;
+	font-family: var(--font);
+	font-weight: 500;
+}
+
+.button1{
+	background: var(--mid2);
+	color: var(--blanco2);
+	font-size: 1.5rem;
+	height: 3rem;
+	border: 2px solid var(--oscuro1);
+	width: 12rem;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: var(--font2);
+	font-weight: 600;
+}
+
+.button1:hover{
+	background: var(--mid1);
+	color: var(--blanco);
+	border: 2px solid var(--oscuro1);
+}
+
+.noTrans{
+	opacity: 0;
+	transform: scale(0.9);
+	transition: 0.7s ease-in-out all;
+}
+
+.noTransUp{
+	opacity: 0;
+	transform: scale(0.9) translateY(100px);
+	transition: 0.7s ease-in-out all;
+}
+
+.noTransLeft{
+	opacity: 0;
+	transform: scale(0.9) translateX(-100px);
+	transition: 0.7s ease-in-out all;
+}
+
+.noTransRight{
+	opacity: 0;
+	transform: scale(0.9) translateX(100px);
+	transition: 0.7s ease-in-out all;
+}
+
+.noTrans2{
+	opacity: 0;
+	transform: scale(0.7);
+	transition: 1s ease-in-out all;
+}
+
+.trans{
+	opacity: 1 ;
+	transform: scale(1) translateY(0) translateX(0);
+}
+
+.vertical{
+	height: 100vh;
+	background: rgba(128, 128, 128, 0.5);
+	color: var(--blanco2);
+	text-align: center;
+	margin: auto;
+}
+
+.vertical h1{
+	font-family: var(--font2);
+	font-weight: 700;
+	font-size: 8rem;
+}
+
+.vertical ion-icon{
+	font-weight: 700;
+	font-size: 8rem;
+	margin-right: 1rem;
+}
+
+@media screen and (orientation: portrait) {
+  .vertical{
+    display: block;
+  }
+  .barContainer, .main{
+    display: none;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .vertical{
+    display: none;
+  }
+  .barContainer, .main{
+    display: block;
+  }
+}

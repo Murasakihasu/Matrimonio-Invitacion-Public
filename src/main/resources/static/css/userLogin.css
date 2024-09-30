@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('/css/userRoot.css');
+
+
+body{
+	display: flex;
+	background: var(--blanco);
+	font-family: var(--font2);
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+}
+
+main{
+	display: flex;
+	padding: 40px;
+	background: var(--blanco2);
+	border-radius: 20px;
+}
+
+.article1{
+	flex: 1;
+	order: 1;
+}
+
+.article1 h1{
+	font-weight: 700;
+	font-size: 4rem;
+	padding: 20px 0px 20px 30px;
+	font-family: var(--font);
+}
+
+.article1 form{
+	padding-left: 30px;
+	width: 80%;
+	font-size: 2rem;
+}
+
+.article1 input{
+	width: 80%;
+	font-size: 1.5rem;
+	border: 2px solid var(--negro)
+}
+
+.article2{
+	flex: 1;
+	display:flex;
+	justify-content: center;
+	overflow: hidden;
+	border-radius: 20px;
+	order: 2;
+	height: calc(100vh - 140px);
+}
+
+.article2 img{
+	height: 100%;
+	object-fit: cover;
+}
+
+.button3{
+	margin: 0;	
+}
+
+@media(max-width: 600px) {
+	main{
+  		display: flex;
+  		flex-direction:column;
+		}
+		
+	.article1{
+		order: 2;
+		border-radius: 0;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		margin-bottom: 30px;
+		}
+	
+	.article2{
+		order: 1;
+		border-radius: 0;
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+		height: 300px;
+		overflow-y: hidden;
+		}
+		
+	.article2 img{
+		height: 300px;
+		}
+		
+	.article1 form{
+	width: 100%;
+}
+}

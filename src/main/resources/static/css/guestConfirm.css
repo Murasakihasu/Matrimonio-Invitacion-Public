@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url('/css/guestRoot.css');
+
+.main{
+	background: var(--blanco3);
+	padding: 30px;
+	padding-top:0;
+}
+
+h1{
+	text-align: center;
+	font-size: 6rem;
+	color: var(--blanco2);
+	margin: 40px;
+	font-family: var(--font);
+	font-weight: 500;
+}
+
+
+article{
+	background: var(--blanco2);
+	display:grid;
+	grid-template-columns:repeat(1,1fr);
+	grid-gap:20px;
+	padding: 80px;
+	border-top-right-radius:4rem;
+	border-bottom-left-radius:4rem;
+	border-top-left-radius:8rem;
+	border-bottom-right-radius:8rem;
+	width: 80%;
+	margin: 0 auto;
+}
+
+article section{
+	background: var(--blanco2);
+	color: var(--oscuro1);
+	padding:30px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+article section h2{
+	font-size: 1.8rem;
+	font-weight: 600;
+	font-family: var(--font2);
+}
+
+
+article section .confirmBox{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.confirm{
+	background: var(--oscuro1);
+	color: var(--blanco2);
+	font-size: 1.5rem;
+	height: 3rem;
+	width: 12rem;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+}
+
+.cancel button{
+	border: none;
+	background: none;
+	cursor: pointer;
+	margin-left: 20px;
+	color: var(--oscuro1);
+	font-size: 2rem;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+

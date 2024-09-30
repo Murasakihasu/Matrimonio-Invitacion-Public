@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url('/css/userRoot.css');
+
+body{
+	background: var(--blanco);
+}
+
+main{
+	margin: 0 auto;
+	margin-bottom: 4rem;
+	width: 80%;
+	padding: 60px;
+	background: var(--blanco2);
+	display:grid;
+	grid-gap: 40px;
+	text-align: center;
+	border-radius:20px;
+	box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+	font-family: var(--font2);
+}
+
+article{
+	background: var(--blanco);
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+	margin-top: 60px;
+}
+
+header h1{
+	font-size: 6rem;
+	font-weight: 500;
+	margin-bottom: 20px;
+	font-family: var(--font);
+}
+
+header p{
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+header h2{
+	font-size: 4rem;
+	font-weight: 500;
+	margin-bottom: 20px;
+	font-family: var(--font);
+}
+
+.invTable{
+	margin-top: 3rem;
+	width: 100%;
+}
+
+.invTable tr{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.invTable tr th{
+	font-size: 2.3rem;
+	font-weight: 600;
+	text-align:center;
+	border-bottom: solid 2px var(--terracota1);
+	margin-bottom: 2rem;
+}
+
+.invTable tr td{
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.invTable a{
+	text-decoration: none;
+	color: var(--terracota1);
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.invTable .noConfirm{
+	color: red;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.invTable .confirm{
+	color: green;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.invTable .form{
+	margin-bottom: 4rem;
+	padding: 0;
+}
+
+.invTable .form div{
+	display: flex;
+}
+
+.invTable .button3{
+	width: 3rem;
+	font-weight: 700;
+}
+
+.invTable .button3 ion-icon{
+	margin: 0;
+}
+
+article figure{
+	padding: 20px;
+}
+
+article h2{
+	font-size:3.5rem;
+	font-weight:600;
+	font-family: var(--font);
+}
+
+article p{
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.buttonBack{
+ 	margin-top:60px;	
+}
+
+ion-icon{
+ 	margin-right:0.5rem;
+ 	font-size:1.8rem;	
+}

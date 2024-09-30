@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('/css/guestRoot.css');
+
+article{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 60px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.tarjeta1{
+	display: flex;
+	background: var(--blanco2);
+	padding: 60px;
+	border-top-right-radius:4rem;
+	border-bottom-left-radius:4rem;
+	border-top-left-radius:8rem;
+	border-bottom-right-radius:8rem;
+	color: var(--oscuro2);
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	width: 80%;
+	margin: 0 auto;
+}
+
+.tarjeta1 .icon, .tarjeta2 .icon{
+	width: 100%;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.tarjeta1 .icon ion-icon{
+	font-size: 4rem;
+	color: var(--oscuro1);
+}
+
+.tarjeta2 .icon ion-icon{
+	font-size: 4rem;
+	color: var(--blanco2);
+}
+
+.tarjeta1 .content, .tarjeta2 .content{
+	text-align: center;
+	width: 100%;
+}
+
+.tarjeta1 .content h2, .tarjeta2 .content h2{
+	font-size: 2.5rem;
+}
+
+.tarjeta1 .content p, .tarjeta2 .content p{
+	font-size: 1.5rem;
+	padding: 10px;
+}
+
+.tarjeta2{
+	display: flex;
+	background: var(--mid2);
+	padding: 60px;
+	border-top-right-radius:8rem;
+	border-bottom-left-radius:8rem;
+	border-top-left-radius:4rem;
+	border-bottom-right-radius:4rem;
+	color: var(--blanco2);
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	width: 80%;
+	margin: 0 auto;
+}
+

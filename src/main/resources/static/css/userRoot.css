@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+:root{
+	--terracota1: #85351e;
+	--terracota2:#E2725B;
+	--pastel: #dfb9a6;
+	--blanco2: #fce2c7;;
+	--blanco: #fff8e7;
+	--blanco3: #fff;
+	--negro: black;
+	--negro2: #800020;
+	--font:"Dancing Script", cursive;
+	--font2: "Gowun Batang", serif;
+}
+svg{
+	width: 100%;
+}
+
+main{
+	position: relative;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.button1{
+	background: var(--terracota1);
+	color: var(--blanco);
+	font-size: 1.6rem;
+	border: 2px solid var(--negro);
+	border-radius:20px;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	padding: 7px;
+}
+
+.button1 ion-icon{
+	margin-right: 7px;
+}
+
+.button1:hover{
+	background: var(--pastel);
+	color: var(--terracota1);
+	border: 2px solid var(--terracota1);
+}
+
+.button2{
+	background: var(--terracota1);
+	color: var(--blanco);
+	font-size: 1.8rem;
+	height: 55px;
+	border: 2px solid var(--negro);
+	font-family: var(--font);
+}
+
+.button2:hover{
+	background: var(--pastel);
+	color: var(--terracota1);
+	border: 2px solid var(--terracota1)
+}
+
+.button3{
+	background: var(--terracota1);
+	color: var(--blanco);
+	font-size: 1.6rem;
+	border: 2px solid var(--negro);
+	border-radius:20px;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	padding: 7px;
+	width: 300px;
+	margin: auto;
+}
+
+.button3:hover{
+	background: var(--pastel);
+	color: var(--terracota1);
+	border: 2px solid var(--terracota1);
+}
+
+.buttonBack{
+	font-size:2em;
+	width: 30%;
+	margin-top: 60px;
+}
+
+.buttonBack ion-icon{
+	margin-right: 20px;
+}
+
+.boton-enlace {
+    background: none;
+    color: var(--terracota1);
+    border: none;
+    padding: 0;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+form span{
+	font-size:1.5rem;
+	color: var(--terracota1);
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.span{
+	color: grey;
+}
+
+.hover:hover{
+	background: var(--terracota1);
+	color: var(--blanco);
+	border-radius: 20px;
+}
+
+.logout{
+	position: absolute; 
+	top: 3rem;
+	right: 3rem;
+}
+
+.logout button{
+	font-size: 1.2rem;
+}
+
+.logout ion-icon{
+	margin-right: 10px;
+}
+
+.form{
+	padding: 30px;
+	display: grid;
+	grid-gap: 20px;
+}
+
+.form label{
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.form label p{
+	font-size: 2rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+.form input{
+	width: 80%;
+	border: solid 2px var(--terracota1);
+	margin: auto;
+	height: 3rem;
+	font-size: 1.5rem;
+}
+
+.form textarea{
+	width: 80%;
+	height: 15rem;
+	border: solid 2px var(--terracota1);
+	margin: auto;
+}
+
+.col3{
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col2{
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.col1{
+ 	display: grid;
+	gap: 30px;
+	grid-template-columns: 1fr;
+ }
+ 
+ .empty{
+	color: var(--terracota1);
+	font-size: 1.5rem;
+	font-weight: 600;
+}
